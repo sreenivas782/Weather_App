@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-APP</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="recentCitiesDropdown">
+     <h2 id="title">Weather &nbsp; App
+        
+            <select id="recentCitiesSelect" onchange="selectRecentCity(this)">
+                <option value="">Recently searched cities</option>
+            </select>
+        </div>
+    </h2>
+    
+    <div id="main-card">
+        <div id="container-1">
+            <strong id="strong">ENTER CITY NAME</strong><br><br>
+            <input id="inputs" type="text" placeholder="Enter city....."><br><br>
+            <button id="btn-1S">Search</button><br><br>
+            <button id="btn-2L">Current-Location</button><br><br>
+           
+        </div>
+
+        <div id="main-card-2">
+            <div id="container-2">
+                <div id="text">
+                    <h3 id="city">CITY</h3><br>
+                    <p><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;<span id="date"></span></p><br>
+                    <p><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;&nbsp;&nbsp;Temperature:<span id="temp"></span></p><br>
+                    <p><i class="fa-solid fa-water"></i>&nbsp;&nbsp;&nbsp;Humidity:<span id="humd"></span></p><br>
+                    <p><i class="fa-solid fa-wind"></i>&nbsp;&nbsp;&nbsp;Wind:<span id="wind"></span></p>
+                </div>
+                <div id="icon">
+                    <h1 id="icon-area"><i class="fa-solid fa-cloud-sun-rain"></i></h1><br><br>
+                    <p id="des"></p>
+                </div>
+            </div>
+            <div id="five-days-forecast">
+                <h2>5-Days Forecast</h2><br>
+                <ul id="forecast">
+                    <li id="day1">
+                        <h2 class="forecast-date"></h2>
+                        <h1 class="forecast-icon"><i class="fa-solid fa-cloud-sun-rain"></i></h1>
+                        <p><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;&nbsp;&nbsp;Temperature:<span class="forecast-temp"></span></p><br>
+                        <p><i class="fa-solid fa-water"></i>&nbsp;&nbsp;&nbsp;Humidity:<span class="forecast-humd"></span></p><br>
+                        <p><i class="fa-solid fa-wind"></i>&nbsp;&nbsp;&nbsp;Wind:<span class="forecast-wind"></span></p>
+                    </li>
+                    <li id="day2">
+                        <h2 class="forecast-date"></h2>
+                        <h1 class="forecast-icon"><i class="fa-solid fa-cloud-sun-rain"></i></h1>
+                        <p><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;&nbsp;&nbsp;Temperature:<span class="forecast-temp"></span></p><br>
+                        <p><i class="fa-solid fa-water"></i>&nbsp;&nbsp;&nbsp;Humidity:<span class="forecast-humd"></span></p><br>
+                        <p><i class="fa-solid fa-wind"></i>&nbsp;&nbsp;&nbsp;Wind:<span class="forecast-wind"></span></p>
+                    </li>
+                    <li id="day3">
+                        <h2 class="forecast-date"></h2>
+                        <h1 class="forecast-icon"><i class="fa-solid fa-cloud-sun-rain"></i></h1>
+                        <p><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;&nbsp;&nbsp;Temperature:<span class="forecast-temp"></span></p><br>
+                        <p><i class="fa-solid fa-water"></i>&nbsp;&nbsp;&nbsp;Humidity:<span class="forecast-humd"></span></p><br>
+                        <p><i class="fa-solid fa-wind"></i>&nbsp;&nbsp;&nbsp;Wind:<span class="forecast-wind"></span></p>
+                    </li>
+                    <li id="day4">
+                        <h2 class="forecast-date"></h2>
+                        <h1 class="forecast-icon"><i class="fa-solid fa-cloud-sun-rain"></i></h1>
+                        <p><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;&nbsp;&nbsp;Temperature:<span class="forecast-temp"></span></p><br>
+                        <p><i class="fa-solid fa-water"></i>&nbsp;&nbsp;&nbsp;Humidity:<span class="forecast-humd"></span></p><br>
+                        <p><i class="fa-solid fa-wind"></i>&nbsp;&nbsp;&nbsp;Wind:<span class="forecast-wind"></span></p>
+                    </li>
+                    <li id="day5">
+                        <h2 class="forecast-date"></h2>
+                        <h1 class="forecast-icon"><i class="fa-solid fa-cloud-sun-rain"></i></h1>
+                        <p><i class="fa-solid fa-temperature-three-quarters"></i>&nbsp;&nbsp;&nbsp;Temperature:<span class="forecast-temp"></span></p><br>
+                        <p><i class="fa-solid fa-water"></i>&nbsp;&nbsp;&nbsp;Humidity:<span class="forecast-humd"></span></p><br>
+                        <p><i class="fa-solid fa-wind"></i>&nbsp;&nbsp;&nbsp;Wind:<span class="forecast-wind"></span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+#title{
+   
+    
+    align-items: center;
+    text-align: center;
+    color:white;
+    padding: 5px;
+    text-shadow: #C4E4FF;
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+
+}
+
+
+#main-card{
+
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 10px;
+}
+
+#container-1{
+    background-color:#352f44;
+    text-align: center;
+    padding: 20px 50px;
+    border-radius: 20px;
+    justify-content: space-between;
+    color: white;
+    border: 10px;
+    border-color:white;
+    background-image: linear-gradient(to right, #141e30, #243b55);
+    
+   
+      
+}
+
+#strong{
+display: inline-block;
+color: aqua;
+margin-top: 60px;
+
+}
+#container-1 input{
+    padding: 5px 15px;
+    margin-top: 50px;
+    
+}
+
+#btn-1S{
+    padding: 7px 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px;
+    margin-top: 50px;
+}
+#btn-2L{
+    padding: 7px 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0px;
+    margin-top: 30px;
+}
+#icon h1{
+   color: rgb(5, 192, 239);
+    background-color: rgb(1, 8, 14);
+    border-radius: 50px;
+    padding:10px;
+}
+#container-2{
+   
+    background-color: #113f67;
+    color: white;
+    display: flex;
+    width: 50rem;
+    gap:100px;
+    justify-content: space-around;
+    padding: 15px 10px;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    
+
+}
+
+#five-days-forecast{
+    margin-top: 10px;
+    
+}
+
+
+#five-days-forecast ul li {
+    background-color:#C8CFA0;
+    
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+    padding:10px 5px;
+    border-radius: 10px;
+    color: rgb(16, 16, 16);
+    width:19%;
+}
+#five-days-forecast ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    
+
+   
+}
+
+#five-days-forecast ul li:hover {
+    transform: scale(1.1);
+    background-color:lightgoldenrodyellow;
+    
+background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+    
+  }
+
+  #recentCitiesDropdown {
+    margin-top: 10px;
+    border: 0px;
+}
+
+
+#recentCitiesSelect {
+    width: 10%;
+    padding: 2px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    left:-540px;
+
+}
+
+                                 /* For Iphone-SE*/
+
+@media only screen and (max-width:377px) {
+
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    #main-card{
+       
+        display:grid;
+       
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+    }
+   #container-1{
+   
+    width: 100%;
+    height: 50vh;
+    border-radius: 2%;
+   
+
+   }
+
+  #strong{
+    margin-top: 10px;
+  }
+  #container-2{
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 2%;
+    
+  }
+
+  #five-days-forecast h2{
+    color: whitesmoke;
+    margin-top: 10px;
+  }
+
+  #five-days-forecast ul{
+    display: grid;
+    
+  }
+  #five-days-forecast ul li{
+    width: 220%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 30vh;
+    margin-top: 20px;
+
+  }
+  #recentCitiesDropdown{
+    background-color: blueviolet;
+  }
+
+  #recentCitiesSelect {
+    width: 32%;
+    padding: 2px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    left:10%;
+
+}
+}
+
+
+
+
+                       /* For Ipad-mini*/
+
+
+@media screen and (max-width: 770px) and (min-width: 380px) {
+  
+    body{
+        overflow-y:scroll;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+       
+        background-image: url(bg.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    }
+
+    #main-card{
+       
+        display:grid;
+       
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+    }
+
+    #container-1{
+   
+        width:95%;
+        height: 40vh;
+        border-radius: 2%;
+        margin-left: 2%;
+       
+    
+       }
+
+       #container-2{
+        margin-top: 25px;
+        width: 95%;
+        border-radius: 2%;
+        margin-left: 2%;
+       
+        
+      }
+
+      #five-days-forecast h2{
+        color: whitesmoke;
+        margin-top: 10px;
+      }
+
+      #five-days-forecast ul li{
+        height: 40vh;
+      }
+
+      #recentCitiesSelect {
+        width: 32%;
+        padding: 2px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        left:10%;
+    
+    }
+    
+}
