@@ -1,4 +1,4 @@
-                                                     _______________WEATHER - APPLICATION ___________________
+_______________WEATHER - APPLICATION ___________________
 
 I have created this weather application using Html , Css , Javascript
 
